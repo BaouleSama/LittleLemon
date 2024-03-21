@@ -18,4 +18,4 @@ class BookingSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = "url", "username", "email", "groups"
+        fields = ["url", "username", "email", "groups", "password"]

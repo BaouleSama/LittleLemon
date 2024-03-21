@@ -27,6 +27,7 @@ class SingleMenuView(generics.RetrieveAPIView, generics.DestroyAPIView):
 class BookingSet(viewsets.ModelViewSet):
     serializer_class = BookingSerializer
     queryset = Booking.objects.all()
+    permission_classes = [IsAuthenticated]
 
 
 # Create a viewSet to create user
